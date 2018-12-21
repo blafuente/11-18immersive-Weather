@@ -42,13 +42,13 @@ function animateTemp(currentArc,currentTemp){
     context.beginPath();
     // Full, inner circle
     context.fillStyle = "#ccc";
-    context.arc(155,75,70,0,Math.PI*2);
+    context.arc(155,95,70,0,Math.PI*2);
     context.closePath();
     context.fill();
 
     // Outer line
     context.beginPath();
-    context.arc(155,75,75,Math.PI*1.5,Math.PI*2 * currentArc + Math.PI*1.5);
+    context.arc(155,95,75,Math.PI*1.5,Math.PI*2 * currentArc + Math.PI*1.5);
     context.stroke();
 
     // Update the arc percentage until we hit currTemp
